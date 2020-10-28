@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's cooking?</title>
+    <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <div class="container">
+        <div class="hero"></div>
+        <div class="header">
+            <h1>What's Cooking?</h1>
+        </div>
+        <div class="main-search">
+            <form onSubmit="return false;">
+                <input class="form" placeholder="Search Ingredient" id="searchBar">
+                <button id="searchBtn" type="button"><i class="fas fa-search"></i></button>
+            </form>
+            <div class=ingredient1></div>
+            <div class="ingredient2"></div>
+        </div> 
+        <div class="results"></div>
+        <footer id="findGrocery">
+            NEED GROCERIES? <button>CLICK HERE!</button>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
