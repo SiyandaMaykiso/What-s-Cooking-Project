@@ -20,7 +20,7 @@
 <img src="https://github.com/SiyandaMaykiso/What-s-Cooking-Project/blob/main/demo.gif" alt="application screenshot">
 
 ### Demonstration 
-<img src="https://github.com/SiyandaMaykiso/What-s-Cooking-Project/blob/main/demo.gif" alt="application screenshot">
+<img src="https://github.com/SiyandaMaykiso/What-s-Cooking-Project/blob/main/demo.gif" alt="application demonstration">
 
 ## Features in Development
 * Ability to search for more than two ingredients
