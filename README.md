@@ -13,7 +13,7 @@
     * Map will open up in a new window.
 
 ## Links
-* Deployed application: https://coryjquirk.github.io/whats-cookin/
+* Deployed application: https://siyandamaykiso.github.io/What-s-Cooking-Project/
 * Repository: https://github.com/coryjquirk/whats-cookin
 
 ### Screenshot
