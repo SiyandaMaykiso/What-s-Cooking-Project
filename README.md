@@ -14,7 +14,7 @@
 
 ## Links
 * Deployed application: https://siyandamaykiso.github.io/What-s-Cooking-Project/
-* Repository: https://github.com/coryjquirk/whats-cookin
+* Repository: https://github.com/SiyandaMaykiso/What-s-Cooking-Project
 
 ### Screenshot
 <img src="https://coryjquirk.github.io/whats-cookin/screenshot.PNG" alt="application screenshot">
