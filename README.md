@@ -42,4 +42,4 @@ None needed, it runs right in your browser.
 * jQuery
 
 ## Credits
-Developed by Neil McKenzie, Cory Quirk, Jeff Thao, & Siyanda Vuyo Mayekiso 
+Developed by Neil McKenzie, Cory Quirk, Jeff Thao, & Siyanda Mayekiso 
