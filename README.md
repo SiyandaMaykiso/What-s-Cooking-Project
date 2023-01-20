@@ -17,7 +17,7 @@
 * Repository: https://github.com/SiyandaMaykiso/What-s-Cooking-Project
 
 ### Screenshot
-<img src="https://coryjquirk.github.io/whats-cookin/screenshot.PNG" alt="application screenshot">
+<img src="https://github.com/SiyandaMaykiso/What-s-Cooking-Project/blob/main/demo.gif" alt="application screenshot">
 
 
 ## Features in Development
