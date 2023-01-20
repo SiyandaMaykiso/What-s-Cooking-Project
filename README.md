@@ -44,4 +44,4 @@ None needed, it runs right in your browser.
 * jQuery
 
 ## Credits
-Developed by Neil McKenzie, Cory Quirk, Jeff Thao, & Siyanda Mayekiso 
+Developed by Siyanda Mayekiso, Neil McKenzie, Cory Quirk & Jeff Thao
