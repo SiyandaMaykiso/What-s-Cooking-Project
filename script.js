@@ -1,6 +1,6 @@
 function searchIngred(foodItem) {
   $(".results").empty();
-  var queryURL = "https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=%22'" + foodItem + "'%22&app_id=3fde57c1&app_key=98ad8b6a80e961abf27f43122cbe422d"
+  var queryURL = "https://api.edamam.com/api/recipes/v2?type=public&beta=true'" + foodItem + "'&app_id=3e994090&app_key=%2068f28fd268a60e49f62d0e1eac7e46d3&random=true"
   $.ajax({
       url: queryURL,
       method: "GET"
