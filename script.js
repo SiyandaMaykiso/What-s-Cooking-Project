@@ -1,6 +1,6 @@
 function searchIngred(foodItem) {
   $(".results").empty();
-  var queryURL = `https://api.edamam.com/api/recipes/v2?type=public&beta=true'${foodItem}'&app_id=3e994090&app_key=%2068f28fd268a60e49f62d0e1eac7e46d3&random=true`
+  var queryURL = "https://api.edamam.com/api/recipes/v2?type=public&q=" + foodItem + "'&app_id=0d9f7dae&app_key=d3398ede5f60b649e69bc8d26a3beab6&?diet"
   $.ajax({
       url: queryURL,
       method: "GET"
