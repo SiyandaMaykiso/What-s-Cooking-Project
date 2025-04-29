@@ -24,8 +24,16 @@
     <main class="main-search">
       <form id="ingredientForm">
         <label for="searchBar" class="visually-hidden">Search for an ingredient</label>
-        <input id="searchBar" placeholder="Search Ingredient" aria-label="Ingredient search" />
-        <button id="searchBtn" type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search Ingredient"
+          aria-label="Ingredient search"
+          autocomplete="off"
+        />
+        <button id="searchBtn" type="submit" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
       </form>
       <div class="ingredient1"></div>
       <div class="ingredient2"></div>
