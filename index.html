@@ -2,34 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's cooking?</title>
-    <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's Cooking?</title>
+  <meta name="description" content="A modern recipe app that helps you cook using ingredients you already have." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
 </head>
-  
+
 <body>
-    <div class="container">
-        <div class="hero"></div>
-        <div class="header">
-            <h1>What's Cooking?</h1>
-        </div>
-        <div class="main-search">
-            <form onSubmit="return false;">
-                <input class="form" placeholder="Search Ingredient" id="searchBar">
-                <button id="searchBtn" type="button"><i class="fas fa-search"></i></button>
-            </form>
-            <div class=ingredient1></div>
-            <div class="ingredient2"></div>
-        </div> 
-        <div class="results"></div>
-        <footer id="findGrocery">
-            NEED GROCERIES? <button>CLICK HERE!</button>
-        </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="script.js"></script>
+  <div class="container">
+    <!-- Hero background -->
+    <div class="hero" role="presentation"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <h1>What's Cooking?</h1>
+    </header>
+
+    <!-- Main search interface -->
+    <main class="main-search">
+      <form id="ingredientForm">
+        <label for="searchBar" class="visually-hidden">Search for an ingredient</label>
+        <input id="searchBar" placeholder="Search Ingredient" aria-label="Ingredient search" />
+        <button id="searchBtn" type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="ingredient1"></div>
+      <div class="ingredient2"></div>
+    </main>
+
+    <!-- Recipe results -->
+    <section class="results" aria-live="polite"></section>
+
+    <!-- Footer grocery finder -->
+    <footer>
+      <p>Need groceries?</p>
+      <button id="findGrocery" aria-label="Find grocery stores near me">Click Here!</button>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
