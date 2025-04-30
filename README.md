@@ -1,47 +1,45 @@
 # What's Cooking?
 
-## Features
-* If you have stray ingredients in your house that you're not sure what to do with, this app will help you find recipes that include those ingredients.
-* This application asks for your current location to help find a grocery store nearby.
-* Mobile-first layout.
+## Updated Features (2025-Ready)
+* Quickly find recipes by entering one or two ingredients you already have
+* Smart ingredient parser: handles phrases like "chicken pasta" or "beef and rice"
+* Location-enabled: Find nearby grocery stores with one click
+* Mobile-first responsive layout
+* Smooth animations and modern card-based UI
+* Styled “View Recipe” buttons for better UX
 
 ## Usage
-* Type in the name of your ingredient and hit the submit button.
-    * Enter up to one more ingredient to narrow your search.
-* Be patient with the app while your results are delivered.
-* Opt in to location services to find a grocery store near you.
-    * Map will open up in a new window.
+1. Type an ingredient (or phrase like "chicken pasta") in the search bar
+2. Click the search button to view recipe cards
+3. Add one more ingredient for more tailored results (max: 2)
+4. Click **View Recipe** to open the full recipe in a new tab
+5. Use the **Need Groceries?** button to find nearby grocery stores
 
 ## Links
-* Deployed application: https://siyandamaykiso.github.io/What-s-Cooking-Project/
-* Repository: https://github.com/SiyandaMaykiso/What-s-Cooking-Project
+* [Live App](https://siyandamaykiso.github.io/What-s-Cooking-Project/)
+* [GitHub Repository](https://github.com/SiyandaMaykiso/What-s-Cooking-Project)
 
 ### Screenshot
 <img src="https://github.com/SiyandaMaykiso/What-s-Cooking-Project/blob/main/screenshot.PNG" alt="application screenshot">
 
-### Demonstration 
+### Demonstration
 <img src="https://github.com/SiyandaMaykiso/What-s-Cooking-Project/blob/main/demo.gif" alt="application demonstration">
 
 ## Features in Development
-* Ability to search for more than two ingredients
-* Create a separate cocktail mode
-* Pull data from multiple APIs for more recipe options
-* Camera integration to scan your ingredients with a photo
+* Support for more than two ingredients
+* Dedicated cocktail mode
+* Integrate multiple recipe APIs for more results
+* Optional image-based ingredient detection
 
 ## Installation
-None needed, it runs right in your browser.
+No installation needed — open in your browser.
 
 ## Tools Used
-* APIs
-     Edamam (food & cocktail recipe database)
-    * TheRecipeDB - used heavily in development but not in final
-    * Google Maps
-* CSS Grid
-* Front end mockups
-    * Adobe Spark (wireframe)
-    * Justinmind (wireframe)
-* FontAwesome
-* jQuery
+* Edamam API (recipe database)
+* Google Maps (grocery locator)
+* CSS Grid, Flexbox
+* jQuery & vanilla JS (ES6+)
+* FontAwesome for icons
+* Animation via CSS keyframes
+* Responsive design for mobile-first experience
 
-## Credits
-Developed by Siyanda Mayekiso, Neil McKenzie, Cory Quirk & Jeff Thao
