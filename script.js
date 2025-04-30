@@ -20,26 +20,26 @@ function searchIngred(foodItem) {
 
 function publishInfo(title, image, link) {
   const id = title.replace(/\s+/g, '');
+  const $card = $('<div>').addClass('recipeCard');
 
-  $('<div>').addClass('recipeTitle').attr('id', `${id}recipeTitle`).appendTo('.results');
-  $('<div>').addClass('thumbnail').attr('id', `${id}thumbnail`).appendTo('.results');
-  $('<div>').addClass('recipeLinks').attr('id', `${id}recipeLinks`).appendTo('.results');
+  $('<div>').addClass('recipeTitle')
+    .append($('<h5>').text(title).attr('id', `h5${id}`))
+    .appendTo($card);
 
-  if (!$(`#h5${id}`).length) {
-    $('<h5>').text(title).attr('id', `h5${id}`).appendTo(`#${id}recipeTitle`);
-  }
-  $('<a>').html("<i class='fab fas fa-carrot'></i>")
-    .attr({ href: link, target: '_blank' })
-    .appendTo(`#${id}recipeLinks`);
-
-  if (!$(`#img${id}`).length) {
-    $('<img>').attr({
+  $('<div>').addClass('thumbnail')
+    .append($('<img>').attr({
       src: image,
       class: 'thumbnailImg',
       id: `img${id}`,
       alt: `Image of ${title}`
-    }).appendTo(`#${id}thumbnail`);
-  }
+    }))
+    .appendTo($card);
+
+  $('<div>').addClass('recipeLinks')
+    .append($('<a>').html("<i class='fab fas fa-carrot'></i>").attr({ href: link, target: '_blank' }))
+    .appendTo($card);
+
+  $('.results').append($card);
 }
 
 // Ingredient form logic
