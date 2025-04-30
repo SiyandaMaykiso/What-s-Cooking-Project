@@ -50,8 +50,13 @@ $('#ingredientForm').submit(function (e) {
   if (btncount > 1) return;
   btncount++;
 
-  const ingredient = $('#searchBar').val().trim();
+  let ingredient = $('#searchBar').val().trim();
   $('#searchBar').val("");
+
+  // If input contains multiple ingredients like "chicken pasta" or "beef and rice"
+  const keywords = ingredient.toLowerCase().includes(" and ") ? ingredient.split(" and ") : ingredient.split(/[,\s]+/);
+  ingredient = keywords.map(i => i.trim()).filter(Boolean).join(",");
+
   const newBtn = $('<button>').addClass('abtn').text(ingredient);
 
   if ($('#ingredient1').length) {
