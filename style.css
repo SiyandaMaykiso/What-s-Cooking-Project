@@ -171,6 +171,22 @@
     margin-top: 0.5rem;
   }
   
+  .viewRecipeBtn {
+    display: inline-block;
+    background-color: #ff7043;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .viewRecipeBtn:hover {
+    background-color: #ff5722;
+  }
+  
   footer {
     position: absolute;
     bottom: 0;
@@ -205,3 +221,4 @@
       align-items: center;
     }
   }
+  

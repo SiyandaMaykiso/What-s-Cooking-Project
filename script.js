@@ -36,7 +36,7 @@ function publishInfo(title, image, link) {
     .appendTo($card);
 
   $('<div>').addClass('recipeLinks')
-    .append($('<a>').html("<i class='fab fas fa-carrot'></i>").attr({ href: link, target: '_blank' }))
+    .append($('<a>').text('View Recipe').attr({ href: link, target: '_blank', class: 'viewRecipeBtn' }))
     .appendTo($card);
 
   $('.results').append($card);
