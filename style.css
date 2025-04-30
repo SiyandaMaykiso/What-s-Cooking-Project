@@ -129,12 +129,6 @@
   }
   
   /* Recipe card container */
-  .recipeTitle {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
   .recipeCard {
     background-color: #fff;
     padding: 1rem;
@@ -143,6 +137,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .recipeCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .recipeTitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
   }
   
   .thumbnailImg {
@@ -191,4 +205,3 @@
       align-items: center;
     }
   }
-  
