@@ -26,7 +26,6 @@
     opacity: 1;
   }
   
-  /* Layout */
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,7 +33,6 @@
     gap: 1rem;
   }
   
-  /* Hero section */
   .hero {
     grid-column: 1 / -1;
     background-image: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg");
@@ -45,7 +43,6 @@
     height: 300px;
   }
   
-  /* Header */
   .header {
     grid-column: 1 / -1;
     text-align: center;
@@ -59,15 +56,31 @@
     font-size: 3rem;
   }
   
-  /* Search bar */
   #searchBar {
-    width: 60%;
+    width: 100%;
     padding: 10px;
     font-size: 1rem;
     margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
   }
   
-  /* Ingredient buttons */
+  #searchBtn {
+    margin-top: 10px;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #searchBtn:hover {
+    background-color: #666;
+  }
+  
   .abtn {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
@@ -87,7 +100,6 @@
     transform: translateY(1px);
   }
   
-  /* Main search */
   .main-search {
     grid-column: 2 / 3;
     display: flex;
@@ -96,14 +108,17 @@
     padding: 1rem;
   }
   
-  /* Ingredient display */
+  .ingredient-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
   .ingredient1,
   .ingredient2 {
     display: inline-block;
-    margin: 5px;
   }
   
-  /* Results */
   .results {
     grid-column: 1 / -1;
     display: grid;
@@ -113,7 +128,6 @@
     text-align: center;
   }
   
-  /* Recipe cards */
   .recipeTitle,
   .recipeLinks,
   .thumbnail {
@@ -127,7 +141,6 @@
     border-radius: 6px;
   }
   
-  /* Footer */
   footer {
     position: absolute;
     bottom: 0;
@@ -140,7 +153,6 @@
     color: #555;
   }
   
-  /* Responsive */
   @media (max-width: 768px) {
     h1 {
       font-size: 2rem;
@@ -153,4 +165,14 @@
     .main-search {
       grid-column: 1 / -1;
     }
+  
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .ingredient-tags {
+      flex-direction: column;
+      align-items: center;
+    }
   }
+  
